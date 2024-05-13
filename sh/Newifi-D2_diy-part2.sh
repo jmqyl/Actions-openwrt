@@ -31,7 +31,7 @@ rm -rf feeds/luci/themes/luci-theme-design && git clone --depth 1 https://github
 rm -rf feeds/luci/applications/luci-app-design-config && git clone --depth 1 https://github.com/gngpp/luci-app-design-config feeds/luci/applications/luci-app-design-config
 
 #6.添加自动挂载磁盘脚本
-#mkdir -p files/etc/hotplug.d/block && wget -O files/etc/hotplug.d/block/30-usbmount https://raw.githubusercontent.com/fichenx/P3TERX_Actions-OpenWrt/main/files/etc/hotplug.d/block/30-usbmount && chmod 755 files/etc/hotplug.d/block/30-usbmount
+#mkdir -p files/etc/hotplug.d/block && wget -O files/etc/hotplug.d/block/30-usbmount https://raw.githubusercontent.com/jmqyl/P3TERX_Actions-OpenWrt/main/files/etc/hotplug.d/block/30-usbmount && chmod 755 files/etc/hotplug.d/block/30-usbmount
 mkdir -p files/etc/hotplug.d/block/
 cp -rf $GITHUB_WORKSPACE/backup/newifi3/files/etc/hotplug.d/block/30-usbmount files/etc/hotplug.d/block/
 chmod 755 files/etc/hotplug.d/block/30-usbmount
@@ -56,13 +56,13 @@ sed -i 's/Must an IPv4 address/IPv4 address or domain name/g' feeds/luci/applica
 sed -i 's/必须是 IPv4 地址/IPv4 地址或域名/g' feeds/luci/applications/luci-app-nps/po/zh-cn/nps.po
 
 #####design主题导航栏设置######
-#sed -i 's/shadowsocksr/openclash/g' feeds/fichenx/luci-theme-design/luasrc/view/themes/design/header.htm
-#sed -i 's/system\/admin/docker\/containers/g' feeds/fichenx/luci-theme-design/luasrc/view/themes/design/header.htm
-#sed -i 's/ssr.png/openclash.png/g' feeds/fichenx/luci-theme-design/luasrc/view/themes/design/header.htm
+#sed -i 's/shadowsocksr/openclash/g' feeds/jmqyl/luci-theme-design/luasrc/view/themes/design/header.htm
+#sed -i 's/system\/admin/docker\/containers/g' feeds/jmqyl/luci-theme-design/luasrc/view/themes/design/header.htm
+#sed -i 's/ssr.png/openclash.png/g' feeds/jmqyl/luci-theme-design/luasrc/view/themes/design/header.htm
 
 #luci-app-serverchan
 rm -rf feeds/luci/applications/luci-app-serverchan
-#cp -af feeds/fichenx/luci-app-serverchan feeds/luci/applications/luci-app-serverchan
+#cp -af feeds/jmqyl/luci-app-serverchan feeds/luci/applications/luci-app-serverchan
 git clone -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush feeds/luci/applications/luci-app-serverchan
 
 #修改默认主题
