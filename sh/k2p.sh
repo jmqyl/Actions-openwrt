@@ -39,6 +39,10 @@ chmod 755 files/etc/hotplug.d/block/30-usbmount
 #7.修改主机名
 #sed -i "s/hostname='OpenWrt'/hostname='Newifi-D2'/g" package/base-files/files/bin/config_generate
 
+##### K2P-32M修改编译文件 ######
+sed -i '/spi-max-frequency/a\\t\tbroken-flash-reset;' target/linux/ramips/dts/mt7621_phicomm_k2p.dts
+sed -i 's/<0xa0000 0xf60000>/<0xa0000 0x1fb0000>/g' target/linux/ramips/dts/mt7621_phicomm_k2p.dts
+sed -i 's/15744k/32448k/g' target/linux/ramips/image/mt7621.mk
 
 #nps（修改nps源为yisier）
 rm -rf feeds/packages/net/nps
