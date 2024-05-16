@@ -188,7 +188,7 @@ jobs:
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
          #### Newifi_D2 Openwrt固件配置：
-            - IP:192.168.124.1
+            - IP:192.168.1.1
             - WEB登陆账户：root
             - 密码：password
             - 固件源码：https://github.com/coolsnowwolf/lede
