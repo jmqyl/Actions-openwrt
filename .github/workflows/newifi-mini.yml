@@ -193,7 +193,7 @@ jobs:
         commit: main
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
-          #### MiWifi-mini Openwrt 固件配置：
+          #### newifi-mini Openwrt 固件配置：
           - IP:192.168.125.1
           - WEB登陆账户：root
           - 密码：password
@@ -208,7 +208,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         repository: ${{ github.repository }}
-        delete_workflow_pattern: Build OpenWrt MiWifi-mini
+        delete_workflow_pattern: Build OpenWrt newifi-mini
         retain_days: 30
         keep_minimum_runs: 10
 
@@ -218,7 +218,7 @@ jobs:
       with:
         #repo:
         keep_latest: 10
-        delete_tag_pattern: MiWifi-mini
+        delete_tag_pattern: newifi-mini
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
