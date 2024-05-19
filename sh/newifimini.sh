@@ -49,10 +49,10 @@ sed -i "s/hostname='OpenWrt'/hostname='newifi-mini'/g" package/base-files/files/
 #svn co https://github.com/fw876/helloworld/trunk/redsocks2 package/redsocks2
 
 #####design主题导航栏设置######
-#sed -i 's/shadowsocksr/bypass/g' feeds/fichenx/luci-theme-design/luasrc/view/themes/design/header.htm
-sed -i 's|services/openclash|services/bypass|g' feeds/fichenx/luci-theme-design/luasrc/view/themes/design/header.htm
-#sed -i 's/system\/admin/docker\/containers/g' feeds/fichenx/luci-theme-design/luasrc/view/themes/design/header.htm
-sed -i 's|openclash.png|ssr.png|g' feeds/fichenx/luci-theme-design/luasrc/view/themes/design/header.htm
+#sed -i 's/shadowsocksr/bypass/g' feeds/jmqyl/luci-theme-design/luasrc/view/themes/design/header.htm
+sed -i 's|services/openclash|services/bypass|g' feeds/jmqyl/luci-theme-design/luasrc/view/themes/design/header.htm
+#sed -i 's/system\/admin/docker\/containers/g' feeds/jmqyl/luci-theme-design/luasrc/view/themes/design/header.htm
+sed -i 's|openclash.png|ssr.png|g' feeds/jmqyl/luci-theme-design/luasrc/view/themes/design/header.htm
 
 #nps（修改nps源为yisier）
 rm -rf feeds/packages/net/nps
@@ -71,7 +71,7 @@ sed -i 's/必须是 IPv4 地址/IPv4 地址或域名/g' feeds/luci/applications/
 
 #luci-app-serverchan
 rm -rf feeds/luci/applications/luci-app-serverchan
-cp -af feeds/fichenx/luci-app-serverchan feeds/luci/applications/luci-app-serverchan
+cp -af feeds/jmqyl/luci-app-serverchan feeds/luci/applications/luci-app-serverchan
 
 #luci-app-msd_lite
 #rm -rf feeds/luci/applications/luci-app-msd_lite
