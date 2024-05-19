@@ -67,12 +67,10 @@ sed -i 's/必须是 IPv4 地址/IPv4 地址或域名/g' feeds/luci/applications/
 
 #luci-app-msd_lite
 rm -rf feeds/luci/applications/luci-app-msd_lite
-#cp -af feeds/jmqyl/luci-app-serverchan feeds/luci/applications/luci-app-serverchan
 git clone https://github.com/jarod360/luci-app-msd_lite feeds/luci/applications/luci-app-msd_lite
 
 #luci-app-xupnpd
 rm -rf feeds/luci/applications/luci-app-xupnpd
-#cp -af feeds/jmqyl/luci-app-serverchan feeds/luci/applications/luci-app-serverchan
 git clone https://github.com/jarod360/luci-app-xupnpd feeds/luci/applications/luci-app-xupnpd
 
 #修改默认主题
