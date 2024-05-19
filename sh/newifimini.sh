@@ -72,6 +72,7 @@ sed -i 's/必须是 IPv4 地址/IPv4 地址或域名/g' feeds/luci/applications/
 #luci-app-serverchan
 rm -rf feeds/luci/applications/luci-app-serverchan
 cp -af feeds/jmqyl/luci-app-serverchan feeds/luci/applications/luci-app-serverchan
+#git clone -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush feeds/luci/applications/luci-app-serverchan
 
 #luci-app-msd_lite
 rm -rf feeds/luci/applications/luci-app-msd_lite
