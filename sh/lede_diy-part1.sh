@@ -19,16 +19,3 @@
 #echo 'src-git small8 https://github.com/kenzok8/small-package' >>feeds.conf.default
 #echo 'src-git Boos4721 https://github.com/Boos4721/OpenWrt-Packages' >>feeds.conf.default
 echo 'src-git jmqyl https://github.com/jmqyl/openwrt-package' >>feeds.conf.default
-
-#luci-app-serverchan
-rm -rf feeds/luci/applications/luci-app-serverchan
-#cp -af feeds/jmqyl/luci-app-serverchan feeds/luci/applications/luci-app-serverchan
-git clone -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush feeds/luci/applications/luci-app-serverchan
-
-#luci-app-msd_lite
-rm -rf feeds/luci/applications/luci-app-msd_lite
-git clone https://github.com/hejiadong0608/luci-app-msd_lite feeds/luci/applications/luci-app-msd_lite
-
-#luci-app-xupnpd
-rm -rf feeds/luci/applications/luci-app-xupnpd
-git clone https://github.com/jarod360/luci-app-xupnpd feeds/luci/applications/luci-app-xupnpd
