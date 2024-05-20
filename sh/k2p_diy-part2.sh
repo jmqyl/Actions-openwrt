@@ -59,6 +59,19 @@ sed -i 's/Must an IPv4 address/IPv4 address or domain name/g' feeds/luci/applica
 sed -i 's/Must an IPv4 address/IPv4 address or domain name/g' feeds/luci/applications/luci-app-nps/po/zh-cn/nps.po
 sed -i 's/必须是 IPv4 地址/IPv4 地址或域名/g' feeds/luci/applications/luci-app-nps/po/zh-cn/nps.po
 
+#luci-app-serverchan
+rm -rf feeds/luci/applications/luci-app-serverchan
+#cp -af feeds/jmqyl/luci-app-serverchan feeds/luci/applications/luci-app-serverchan
+git clone -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush feeds/luci/applications/luci-app-serverchan
+
+#luci-app-msd_lite
+rm -rf feeds/luci/applications/luci-app-msd_lite
+git clone https://github.com/hejiadong0608/luci-app-msd_lite feeds/luci/applications/luci-app-msd_lite
+
+#luci-app-xupnpd
+rm -rf feeds/luci/applications/luci-app-xupnpd
+git clone https://github.com/jarod360/luci-app-xupnpd feeds/luci/applications/luci-app-xupnpd
+
 #####design主题导航栏设置######
 #sed -i 's/shadowsocksr/openclash/g' feeds/jmqyl/luci-theme-design/luasrc/view/themes/design/header.htm
 #sed -i 's/system\/admin/docker\/containers/g' feeds/jmqyl/luci-theme-design/luasrc/view/themes/design/header.htm
