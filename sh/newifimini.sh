@@ -76,11 +76,11 @@ git clone -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush feeds/l
 
 #luci-app-msd_lite
 rm -rf feeds/luci/applications/luci-app-msd_lite
-git clone --depth 1 https://github.com/hejiadong0608/luci-app-msd_lite feeds/luci/applications/luci-app-msd_lite
+git clone https://github.com/hejiadong0608/luci-app-msd_lite feeds/luci/applications/luci-app-msd_lite
 
 #luci-app-xupnpd
 rm -rf feeds/luci/applications/luci-app-xupnpd
-git clone --depth 1 https://github.com/jarod360/luci-app-xupnpd feeds/luci/applications/luci-app-xupnpd
+git clone https://github.com/jarod360/luci-app-xupnpd feeds/luci/applications/luci-app-xupnpd
 
 #修改默认主题
 sed -i 's|set luci.main.mediaurlbase|#set luci.main.mediaurlbase|g' feeds/luci/themes/luci-theme-argon/root/etc/uci-defaults/30_luci-theme-argon
