@@ -66,11 +66,11 @@ git clone -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush feeds/l
 
 #luci-app-msd_lite
 rm -rf feeds/luci/applications/luci-app-msd_lite
-git clone https://github.com/hejiadong0608/luci-app-msd_lite feeds/luci/applications/luci-app-msd_lite
+git clone --depth 1 https://github.com/hejiadong0608/luci-app-msd_lite feeds/luci/applications/luci-app-msd_lite
 
 #luci-app-xupnpd
 rm -rf feeds/luci/applications/luci-app-xupnpd
-git clone https://github.com/jarod360/luci-app-xupnpd feeds/luci/applications/luci-app-xupnpd
+git clone --depth 1 https://github.com/jarod360/luci-app-xupnpd feeds/luci/applications/luci-app-xupnpd
 
 #####design主题导航栏设置######
 #sed -i 's/shadowsocksr/openclash/g' feeds/jmqyl/luci-theme-design/luasrc/view/themes/design/header.htm
